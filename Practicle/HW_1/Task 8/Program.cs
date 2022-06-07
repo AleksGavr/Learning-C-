@@ -7,9 +7,15 @@
 Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine());
 int i = 1;
+Console.Write($"{N} -> ");
 
-while (i < N)
+while (i <= N)
 {
+    if (i == N)
+    {
+        Console.Write($"{N}");
+        break;
+    }
     if (i % 2 == 0)
     {
         Console.Write($"{i}, ");
