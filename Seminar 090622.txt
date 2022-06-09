@@ -1,0 +1,42 @@
+Задача 1
+
+int result = new Random().Next(100, 1000);
+int result2 = result/100 + result % 10;
+
+Console.WriteLine(result);
+Console.WriteLine(result2);
+
+Задача 2
+
+Console.WriteLine("Введите число a: ");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите число b: ");
+int b = int.Parse(Console.ReadLine());
+
+if(a % b == 0)
+{
+    Console.Write("Кратно");
+}
+else
+{
+    Console.Write("Не кратно");
+} 
+
+Задача 16
+
+Console.WriteLine("Введите число A"); 
+int a = int.Parse(Console.ReadLine());
+
+
+if (a<100)
+{
+    Console.WriteLine (a+ " - Третьей цифры нет" );
+}
+
+else
+{
+while (a>1000)
+{a=a/10;}
+
+a = a%10;
+Console.WriteLine (a);}
