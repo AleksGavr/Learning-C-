@@ -20,3 +20,12 @@ new Random().Next(min, max)
 [min, max-1] или [min, max)
 
 Логический оператор ИЛИ ||
+
+## Ссылка на матиматические функции:
+https://docs.microsoft.com/ru-ru/dotnet/api/system.math?view=netcore-1.1
+
+
+## Простейшее преобразование числа в строку
+int someValue = 245; //Есть какая-то целочисленная переменная
+ 
+string someStr = someValue.ToString(); //Вызываем метод ToString, получаем строку "245"
