@@ -40,3 +40,4 @@ while (a>1000)
 
 a = a%10;
 Console.WriteLine (a);}
+
