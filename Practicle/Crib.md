@@ -21,7 +21,7 @@ new Random().Next(min, max)
 
 Логический оператор ИЛИ ||
 
-## Ссылка на матиматические функции:
+# Математические функции:
 https://docs.microsoft.com/ru-ru/dotnet/api/system.math?view=netcore-1.1
 
 
@@ -29,3 +29,11 @@ https://docs.microsoft.com/ru-ru/dotnet/api/system.math?view=netcore-1.1
 int someValue = 245; //Есть какая-то целочисленная переменная
  
 string someStr = someValue.ToString(); //Вызываем метод ToString, получаем строку "245"
+
+
+# Основные виды методов
+1. Ничего не принимают, ничего не возвращают
+2. Что-то принимают, ничего не возвращают
+3. Ничего не принимают, что-то возвращают
+4. Что-то принимают, что-то возвращают
+
