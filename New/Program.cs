@@ -6,28 +6,40 @@
 void Array(int[] arr)
 {
     Console.Write("[");
-    int i = 0;
-    while (i < arr.Length + 1)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (i == arr.Length -1)
+        if (i == arr.Length - 1)
         {
             arr[i] = new Random().Next(-9, 10);
-            Console.Write($"{arr[i]}]");
-            break;
+            Console.Write($"{arr[i]}] -> ");
+            return;
         }
         else
         {
             arr[i] = new Random().Next(-9, 10);
             Console.Write($"{arr[i]}, ");
         }
-        i++;
     }
 }
 Console.Write("Ввведите длину массива: ");
 int[] mass = new int[int.Parse(Console.ReadLine())];
 Array(mass);
 
-
+Console.Write("[");
+for (int i = 0; i < mass.Length; i++)
+{
+    if (i == mass.Length - 1)
+    {
+        mass[i] = mass[i] * -1;
+        Console.Write($"{mass[i]}]");
+        return;
+    }
+    else
+    {
+        mass[i] = mass[i] * -1;
+        Console.Write($"{mass[i]}, ");
+    }
+}
 
 
 /* Задача 33: Задайте массив. Напишите программу, которая
