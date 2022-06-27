@@ -1,0 +1,43 @@
+Задача 39: Напишите программу, которая перевернёт
+одномерный массив (последний элемент будет на первом
+месте, а первый - на последнем и т.д.)
+[1 2 3 4 5] -> [5 4 3 2 1]
+[6 7 3 6] -> [6 3 7 6]
+
+Console.Write("Ввведите длину массива: ");
+int[] mass = new int[int.Parse(Console.ReadLine())];
+
+Console.Write("[");
+for (int i = 0; i <= mass.Length; i++)
+{
+    if (i == mass.Length - 1)
+    {
+        mass[i] = new Random().Next(-10, 10);
+        Console.Write($"{mass[i]}] -> [");
+        break;
+    }
+    else
+    {
+        mass[i] = new Random().Next(-10, 10);
+        Console.Write($"{mass[i]}, ");
+    }
+}
+
+for (int i = 0; i < mass.Length / 2; i++)
+{
+    int temp = mass[i];
+    mass[i] = mass[mass.Length - 1 - i];
+    mass[mass.Length - 1 - i] = temp;
+}
+for (int i = 0; i < mass.Length; i++)
+{
+    if (i == mass.Length - 1)
+    {
+        Console.Write($"{mass[i]}]");
+        break;
+    }
+    else
+    {
+        Console.Write($"{mass[i]}, ");
+    }
+}
