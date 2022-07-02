@@ -10,7 +10,7 @@ void PrintFillArray(int[,] matr)
         for (int j = 0; j < matr.GetLength(1); j++)
         {
             matr[i, j] = new Random().Next(1, 10);
-            Console.Write($"{matr[i, j]}");
+            Console.Write($"{matr[i, j]} ");
         }
         Console.WriteLine();
     }
