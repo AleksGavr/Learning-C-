@@ -1,7 +1,4 @@
-﻿// Задача 58: Задайте две матрицы. Напишите программу, которая будет
-// находить произведение двух матриц.
-
-void PrintArray(int[,] arr)
+﻿void PrintArray(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {

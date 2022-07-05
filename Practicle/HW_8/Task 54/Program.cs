@@ -7,24 +7,13 @@ void PrintArray(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
+            arr[i, j] = new Random().Next(0, 10);
             Console.Write($"{arr[i, j]} ");
         }
         Console.WriteLine();
     }
     Console.WriteLine();
 }
-
-void PrintFillArray(int[,] arr)
-{
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            arr[i, j] = new Random().Next(0, 10);
-        }
-    }
-}
-
 Console.Write("Введите количество строк массива: ");
 int row = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
@@ -33,7 +22,6 @@ int column = int.Parse(Console.ReadLine());
 Console.WriteLine();
 int[,] matrix = new int[row, column];
 Console.WriteLine("Исходный массив: ");
-PrintFillArray(matrix);
 PrintArray(matrix);
 
 Console.WriteLine("Массив после сортировки по строкам: ");
